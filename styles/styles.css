@@ -61,6 +61,14 @@ nav a:visited {
 
 /* main */
 
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   /* font-family: 'Rock Salt', cursive; */
   font-size: 2.5rem;
@@ -100,8 +108,7 @@ button {
 .collapsible-note {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   padding: 1.5em;
 }
 
@@ -127,6 +134,12 @@ button {
 .content {
   display: none;
   overflow: hidden;
+  height: 15rem;
   background-color: var(--secondary-five);
   width: 30rem;
+}
+
+em {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
