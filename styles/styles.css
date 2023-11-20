@@ -70,8 +70,8 @@ nav a:visited {
 }
 
 h1 {
-  /* font-family: 'Rock Salt', cursive; */
-  font-size: 2.5rem;
+  font-family: "Source Code Pro", monospace;
+  font-size: 3.4rem;
   text-align: center;
   padding: 1rem;
 }
@@ -86,7 +86,6 @@ h1 {
 
 .notes-title h2 {
   position: absolute;
-  font-family: "Pixelify Sans", sans-serif;
   background-color: var(--secondary-two);
   padding: 0.2em 1em 0.5em 0.5em;
   border-radius: 16px 0 16px 0;
@@ -100,6 +99,8 @@ p {
 }
 
 button {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 400;
   font-size: 2.5rem;
 }
 
@@ -123,6 +124,7 @@ button {
   text-align: left;
   outline: none;
   font-size: 15px;
+  align-items: center;
 }
 
 .active,
@@ -137,9 +139,28 @@ button {
   height: 15rem;
   background-color: var(--secondary-five);
   width: 30rem;
+  max-height: 0;
+
+  padding: 0 1.2rem;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 em {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
+}
+
+/* open close indicator */
+
+.collapsible::before {
+  content: "+";
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 1.2rem;
+  padding-right: 2rem;
+  float: right;
+}
+
+.active:before {
+  content: "-";
 }
