@@ -67,6 +67,7 @@ nav a:visited {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
 }
 
 h1 {
@@ -111,6 +112,8 @@ button {
   flex-direction: column;
   position: relative;
   padding: 1.5em;
+  width: 80vw;
+  max-width: 25rem;
 }
 
 .collapsible {
@@ -119,7 +122,6 @@ button {
   color: var(--text-color);
   cursor: pointer;
   padding: 1.2em;
-  width: 30rem;
   border: none;
   text-align: left;
   outline: none;
@@ -134,15 +136,10 @@ button {
 }
 
 .content {
-  display: none;
-  overflow: hidden;
-  height: 15rem;
   background-color: var(--secondary-five);
-  width: 30rem;
-  max-height: 0;
-
+  height: 10rem;
+  overflow: scroll;
   padding: 0 1.2rem;
-  overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
@@ -163,4 +160,22 @@ em {
 
 .active:before {
   content: "-";
+}
+
+
+/* media query */
+
+@media only screen and (min-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .collapsible-note {
+    width: 100%;
+    max-width: 30rem;
+  }
 }
