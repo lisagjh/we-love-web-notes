@@ -115,7 +115,7 @@ button {
   padding: 1.5em;
   width: 80vw;
   max-width: 25rem;
-  cursor: url('/assets/cursor.png'), auto;
+  cursor: url('assets/cursor.png'), auto;
 }
 
 .collapsible {
