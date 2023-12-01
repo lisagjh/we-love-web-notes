@@ -19,12 +19,12 @@
   font-family: "Young Serif", serif;
   padding: 0;
   margin: 0;
+  cursor: url('/assets/cursor.png'), auto;
 }
 
 body {
   background-color: var(--primary-one);
   color: var(--text-color);
-  cursor: url('/assets/cursor.png'), pointer;
 }
 
 header {
@@ -122,7 +122,6 @@ button {
   background-color: var(--secondary-one);
   color: var(--text-color);
   font-size: 1rem;
-  cursor: url('/assets/cursor.png'), pointer;
   padding: 1.2rem;
   border: none;
   text-align: left;
@@ -142,7 +141,7 @@ button {
   padding: 0 1.2rem;
   transition: max-height 0.2s ease-out;
   scrollbar-color: var(--secondary-one) var(--secondary-five);
-  cursor: url('/assets/cursor.png'), pointer;
+  cursor: url("/assets/cursor.png"), pointer;
 }
 
 em {
@@ -163,7 +162,6 @@ em {
 .active:before {
   content: "-";
 }
-
 
 /* media query */
 
