@@ -115,6 +115,7 @@ button {
   padding: 1.5em;
   width: 80vw;
   max-width: 25rem;
+  cursor: url('/assets/cursor.png'), auto;
 }
 
 .collapsible {
@@ -125,7 +126,7 @@ button {
   padding: 1.2rem;
   border: none;
   text-align: left;
-  /* align-items: stretch;  */
+  cursor: url('/assets/cursor.png'), auto;
 }
 
 .active,
@@ -141,7 +142,7 @@ button {
   padding: 0 1.2rem;
   transition: max-height 0.2s ease-out;
   scrollbar-color: var(--secondary-one) var(--secondary-five);
-  cursor: url("/assets/cursor.png"), pointer;
+  cursor: url('/assets/cursor.png'), auto;
 }
 
 em {
